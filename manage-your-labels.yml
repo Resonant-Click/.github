@@ -11,5 +11,5 @@ LABEL_GROUPS:
       color: a2eeef
     documentation:
       description: Improvements or additions to documentation
-      color: efef15
+      color: '777777'
 REPOS: ~
