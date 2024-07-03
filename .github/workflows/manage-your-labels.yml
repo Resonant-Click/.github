@@ -1,8 +1,5 @@
 name: manage-your-labels
-on:
-#  schedule:
-#    - cron: "*/15 * * * *"
-  workflow_dispatch:
+on: [push]
 jobs:
   mirror-labels:
     runs-on: ubuntu-latest
