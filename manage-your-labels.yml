@@ -2,14 +2,14 @@ LABEL_GROUPS:
   DEFAULT:
     bug:
       description: Something isn't working
-      color: d73a4a
+      color: ffff00
     debt:
       description: Issues to deal with later
       color: 0c0c75
-    enhancement:
+    feature:
       description: New feature or request
       color: a2eeef
     documentation:
       description: Improvements or additions to documentation
-      color: '777777'
+      color: 'ff00ff'
 REPOS: ~
