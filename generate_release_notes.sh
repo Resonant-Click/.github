@@ -10,14 +10,13 @@ else
   release_notes=$(git log "$last_release_tag"..HEAD --pretty=format:"* %h: %s")
 	if [ -z "$release_notes" ]; then
     echo "No new commits since last release."
-    exit 1
   fi
 fi
 
 git tag "$current_tag"
 git push origin "$current_tag"
 
-gh release create "$current_tag" --title "Release $current_tag" --notes "## Release Notes
+gh release create "$current_tag" --title "Release $current_tag" --discussion-category "Software Releases" --notes "## Release Notes
 
 $release_notes"
 
