@@ -7,8 +7,8 @@ if [ -z "$last_release_tag" ]; then
   echo "No previous releases found. Tagging as $current_tag."
   release_notes="Initial release."
 else
-  release_notes=$(git log "$last_release_tag"..HEAD --pretty=format:"* %s")
-  if [ -z "$release_notes" ]; then
+  release_notes=$(git log "$last_release_tag"..HEAD --pretty=format:"* %h: %s")
+	if [ -z "$release_notes" ]; then
     echo "No new commits since last release."
     exit 1
   fi
